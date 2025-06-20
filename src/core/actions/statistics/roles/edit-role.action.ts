@@ -5,7 +5,7 @@ import { ApiErrorResponse } from "../../../../infrastructure/interfaces/api-erro
 import { personsApi } from "../../../api/persons.api";
 import { RoleModel } from "../../../models/role.models";
 
-export const editCountryAction = async (
+export const editRoleAction = async (
     role: RoleModel, roleId: string
 ): Promise<ApiResponse<RoleResponse>> => {
 

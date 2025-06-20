@@ -4,7 +4,7 @@ import { RoleResponse } from "../../../../infrastructure/interfaces/role.respons
 import { ApiErrorResponse } from "../../../../infrastructure/interfaces/api-error.response";
 import { personsApi } from "../../../api/persons.api";
 
-export const deleteCountryAction = async (
+export const deleteRoleAction = async (
     roleId: string
 ): Promise<ApiResponse<RoleResponse>> => {
 
