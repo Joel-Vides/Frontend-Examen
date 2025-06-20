@@ -6,6 +6,8 @@ import { PersonsPage } from "../presentation/pages/persons/PersonsPage"
 import { CreateCountryPage } from "../presentation/pages/countries/CreateCountryPage"
 import { EditCountryPage } from "../presentation/pages/countries/EditCountryPage"
 import { DeleteCountryPage } from "../presentation/pages/countries/DeleteCountryPage"
+import { RolesPage } from "../presentation/pages/roles/RolesPage"
+import { CreateRolesPage } from "../presentation/pages/roles/CreateRolesPage"
 
 export const AppRouter = () => {
     return (
@@ -15,6 +17,11 @@ export const AppRouter = () => {
                     <Route path="/" element={<HomePage />} />
                     <Route path="/countries" element={<CountriesPage />} />
                     <Route path="/countries/create" element={<CreateCountryPage />} />
+                    <Route path="/countries/:countryId/edit" element={<EditCountryPage />} />
+                    <Route path="/countries/:countryId/delete" element={<DeleteCountryPage />} />
+
+                    <Route path="/roles" element={<RolesPage/>}/>
+                    <Route path="/roles/create" element={<CreateRolesPage />} />
                     <Route path="/countries/:countryId/edit" element={<EditCountryPage />} />
                     <Route path="/countries/:countryId/delete" element={<DeleteCountryPage />} />
                     <Route path="/persons" element={<PersonsPage />} />
